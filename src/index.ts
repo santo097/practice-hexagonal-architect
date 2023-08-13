@@ -1,4 +1,12 @@
 "use strict";
-console.log('¡Hello World!');
+import express from "express";
 
-console.log("Esto es un cambio en desarrollo")
+const bootstrap = () => {
+    const server = express()
+    
+    server.use(express.json())
+
+
+}
+
+bootstrap()
